@@ -1,0 +1,40 @@
+body {
+    background-color: #fff;
+    padding: 20px;
+    margin: 0;
+}
+
+ul li {
+    font-family: sans-serif;
+}
+
+ul.header li {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+}
+
+ul.header {
+    background-color: #fff;
+    border: 2px solid #8ceff8; 
+    padding: 0;
+    width: 500px;
+}
+
+ul.header li a {
+    color: #000;
+    font-weight: bold;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.content {
+    background-color: #fff;
+    padding: 20px;
+    width: 500px;
+}
+
+.active {
+    background-color: #8ceff8;
+}
