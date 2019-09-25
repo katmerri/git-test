@@ -45,18 +45,20 @@ class Board extends Component {
 class TicTac extends Component {
     constructor(props) {
         super(props);
-        this.state = {
+        this.initialState = {
             history: [{
                 squares: Array(9).fill(null)
             }],
             xIsNext: true
         };
+
+        this.state = this.initialState;
     }
 
     handleClick(i) {
         const history = this.state.history;
         const current = history[history.length - 1];
-        const squares = this.squares.slice();
+        const squares = current.squares.slice();
         if (calculateWinner(squares) || squares[i]){
             return;
         }
@@ -67,6 +69,11 @@ class TicTac extends Component {
             }]),
             xIsNext: !this.state.xIsNext,
         });
+    }
+
+    onResetClick(e) {
+        e.preventDefault();
+        this.setState(this.initialState);
     }
 
     render() {
@@ -92,6 +99,7 @@ class TicTac extends Component {
                 <div className='game-info'>
                     <div>{status}</div>
                     <ol>{/* TODO */}</ol>
+                    <button className='resetButton' onClick={this.onResetClick.bind(this)}>New Game</button>
                 </div>
             </div>
         );

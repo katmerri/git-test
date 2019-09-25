@@ -2,11 +2,6 @@ ol, ul {
     padding-left: 30px;
 }
 
-body {
-    font: 14px "Century Gothic", Futura, sans-serif;
-    margin: 20px;
-}
-
 .board-row:after {
     clear: both;
     content: "";
@@ -20,7 +15,7 @@ body {
 .square {
     background-color: #fff;
     border: 2px solid #8ceff8;
-    float: inline-start;
+    float: left;
     font-size: 24px;
     font-weight: bold;
     line-height: 34px;
@@ -47,4 +42,21 @@ body {
 
 .game-info {
     margin-left: 20px;
+    font: 18px "Century Gothic", Futura, sans-serif;
+    font-weight: bold;
+}
+
+.resetButton {
+    width: 100px;
+    height: 35px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 2px solid #8ceff8;
+    background-color: #fff;
+    font: 14px "Century Gothic", Futura, sans-serif;
+}
+
+.resetButton:hover {
+    background-color: #8ceff8;
 }
