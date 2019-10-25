@@ -95,7 +95,7 @@ class TicTac extends Component {
                     squares={current.squares}
                     onClick={(i) => this.handleClick(i)}
                     />
-                </div>
+                </div>    
                 <div className='game-info'>
                     <div>{status}</div>
                     <ol>{/* TODO */}</ol>

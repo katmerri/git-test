@@ -36,7 +36,7 @@ ol, ul {
 }
 
 .game {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
 }
 
@@ -60,3 +60,4 @@ ol, ul {
 .resetButton:hover {
     background-color: #8ceff8;
 }
+

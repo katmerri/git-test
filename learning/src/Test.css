@@ -1,0 +1,31 @@
+.joke__search h1 {
+    font: 24px "Century Gothic", Futura, sans-serif;
+    font-weight: bold;
+}
+
+h2 {
+    font: 14px "Century Gothic", Futura, sans-serif;
+    font-weight: bold;
+}
+
+button {
+    width: 100px;
+    height: 35px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 2px solid #8ceff8;
+    background-color: #fff;
+    font: 12px "Century Gothic", Futura, sans-serif;
+    font-weight: bold;
+}
+
+input {
+    width: 225px;
+    height: 30px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 2px solid #000;
+    margin: 5px;
+}
